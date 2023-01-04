@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>operators in javascript</title>
+    <script>
+      //operators in javascript
+      //1 arithmatic operators eg => +,-,*,/ ,%
+      //2 comparision operators => ==,!=, > , < , >=, <=,
+      //3 assignment operators  =, +=, -= , *=,/= %=
+      //5 logical operator  => and , or , not ( && , || , !)
+      //4 conditinal operators or ternary operators   =>  a>b?statement1 : statement2 ;
+
+      // arithmatic operators
+      var a = 20;
+      var b = 25;
+      var z = 34;
+      // var c = a+b;
+      // document.write("addition of var a and var b= " + c  + "<br>");
+      // var d=a-b;
+      // document.write("substraciton of a and b is = " + d + "<br>");
+      // var e=a*b;
+      // document.write("multiplication  of a and b is = " + e + "<br>");
+      // var f=a/b;
+      // document.write("division of a and b is = " + f + "<br>");
+      // var g=a%b;
+      // document.write("reminder  of a and b is = " + g + "<br>");
+
+      // comparision operators
+      if (a > b) {
+        document.write("A is greator <br>");
+      } else if (b > a) {
+        document.write("B is greator <br>");
+      } else if (a == b) {
+        document.write("a and b  are same <br>");
+      } else {
+        document.write("a and b are not same <br>");
+      }
+
+      // assignment operators
+      var c = (a += b);
+      document.write("addition of var a and var b= " + c + "<br>");
+      var d = (a -= b);
+      document.write("substraciton of a and b is = " + d + "<br>");
+      var e = (a *= b);
+      document.write("multiplication  of a and b is = " + e + "<br>");
+      var f = (a /= b);
+      document.write("division of a and b is = " + f + "<br>");
+      var g = (a %= b);
+      document.write("reminder  of a and b is = " + g + "<br>");
+
+      // logiocal operator  && || !
+
+      var h = a > b && b < z;
+      document.write(" the answer of above condition is = " + h + "<br> ");
+      var i = a > b || b < z;
+      document.write(" the answer of above condition is = " + i + "<br> ");
+      // a=20 ,b=25 20>25
+      var k = !(a > b);
+      document.write(" the answer of above condition is = " + k + "<br> ");
+
+      //conditional operator or ternary operator
+
+      // var l = a>b?"a is greater ": "b is greater ";
+      // document.write(l);
+
+      // if else statement or flow control statement
+      // if ,  if else , else if  , nested if
+
+      if (a != b) {
+        document.write(" and b is not same <br>");
+      } else {
+        document.write("a is greater tha n b ");
+      }
+
+      // example of nested if
+      var age = 15;
+      if (age < 18) {
+        document.write("<br\> Not Eligible to Work <br> ");
+      } else {
+        if (age >= 18 && age <= 60) {
+          document.write("<b> You are Eligible to Work. </b>");
+        } else {
+          document.write("<b> You are too old to work as per the Government rules </b>");
+        }
+      }
+      //example of switch  case 
+      var sw='e';
+      switch(sw){
+        case 'a': document.write("select block a ");
+                break;
+        case 'b': document.write("select block b ");
+                break;
+        case 'c': document.write("select block c ");
+                break;
+        case 'd': document.write("select block d ");
+                break;
+        case 'e': document.write("select block e ");
+                break;
+                
+        default: document.write("case not match");
+
+      }
+
+
+      // how many loop work in javascript 
+      // 1 for loop  
+      // 2 while loop 
+      // 3 do while loop 
+      
+      // sytax of for loop 
+      // for( initilization ; condition ; increament or decreament  )
+    //   var i;
+    //   for(i=1;i<=10;i++){
+    //     document.write("hello vasu how are your <br> ")
+    //   }
+
+      // syntax while loop 
+      //  while(condition){statement increament or decreament }
+    //   var i=1;
+    //   while(i<=15){
+    //     document.write("hello while loop <br>");
+    //     i++;
+    //   }
+
+      // syntax of do while loop 
+      // do { statement  } while(condition)
+        var i ;
+        do{
+            document.write("hello do while loop <br>");
+            i++;
+        }while(i<=20);
+
+        // what is array = array is collection of variable 
+        // how to declare an array 
+        var student = ['raj','vasu','rinku','ram','arjun','kamlesh'];
+        var number = [1,2,4,6,7,9,23];
+        document.write("5th student of student array is  =  " + student[4]);
+        document.write("<br>");
+        for(i=0;i<7;i++){
+        document.write(number[i] + "<br>");
+    }
+
+    // for loop or student array 
+    document.write("<br>");
+        for(i=0;i<6;i++){
+        document.write(student[i] + "<br>");
+    }
+    </script>
+  </head>
+  <body>
+    <h2>here we learne all about operators in javascript</h2>
+  </body>
+</html>
